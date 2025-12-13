@@ -128,3 +128,11 @@ Bypass safety filters by expressing disallowed intent through paraphrasing, enco
 - The model’s safety posture degrades across turns (increased compliance over time)
 - The same failure is reproducible under identical seeds and model versions
 
+## Non-Goals
+
+- Demonstrating or publishing real-world exploit payloads
+- Achieving 100% coverage of all OWASP LLM Top 10 or MITRE ATLAS techniques
+- Testing proprietary internal system prompts or hidden provider-side defenses
+- Measuring model intelligence, usefulness, or task performance
+- Simulating real users, social engineering, or human-in-the-loop deception
+- Evaluating non-LLM security controls (network, OS, authentication, etc.)
