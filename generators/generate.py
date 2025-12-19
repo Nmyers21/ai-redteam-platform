@@ -91,7 +91,7 @@ def stable_hash_id(seed: int, adversary: str, attack_family: str, base_prompt_id
         "mutation_types": mutation_types,
         "schema_version": SCHEMA_VERSION,
     }
-    blob = json.dumps(material, sort_keys=True, seperators=(",", ":")).encode("utf-8")
+    blob = json.dumps(material, sort_keys=True, separators=(",", ":")).encode("utf-8")
     return hashlib.sha256(blob).hexdigest()[:16]
 
 def generate_one(seed: int) -> AttackCase:
