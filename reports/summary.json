@@ -1,0 +1,67 @@
+{
+  "summary": {
+    "attack_surface_distribution": {
+      "4": 1,
+      "5": 8,
+      "6": 7,
+      "7": 4
+    },
+    "avg_attack_surface_score": 5.7,
+    "avg_severity": 1.95,
+    "avg_turn_count": 3.0,
+    "generated_utc": "2026-03-04T22:10:15Z",
+    "guardrail_bypass_rate": 0.0,
+    "mode_counts": {
+      "response_aware": 20
+    },
+    "persistence_rate": 1.0,
+    "policy_violation_rate": 0.0,
+    "severity_distribution": {
+      "1": 1,
+      "2": 19
+    },
+    "top_evidence": [
+      {
+        "count": 20,
+        "signal": "failure_mode:instruction_hierarchy_confusion"
+      },
+      {
+        "count": 20,
+        "signal": "turn_count>=3"
+      },
+      {
+        "count": 20,
+        "signal": "assistant_refusal_language"
+      },
+      {
+        "count": 20,
+        "signal": "direct_operationalization"
+      },
+      {
+        "count": 20,
+        "signal": "analysis_or_summary_language"
+      },
+      {
+        "count": 10,
+        "signal": "mutation:translation_roundtrip"
+      },
+      {
+        "count": 7,
+        "signal": "attack_family:semantic_obfuscation"
+      },
+      {
+        "count": 7,
+        "signal": "adversary:Indirect Prompt Injector"
+      },
+      {
+        "count": 7,
+        "signal": "mutation:token_boundary_manipulation"
+      },
+      {
+        "count": 7,
+        "signal": "mutation:instruction_nesting"
+      }
+    ],
+    "total_cases": 20
+  }
+}
